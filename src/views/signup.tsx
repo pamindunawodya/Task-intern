@@ -9,7 +9,7 @@ function Signup():JSX.Element{
         <section className={'flex justify-center items-center p-5'}>
             <div className={'w-fit p-10 border shadow-xl rounded-xl'}>
 
-                <img src="src/assets/Logo.png" title="logo" alt="logo" className={'w-24 m-auto'}/>
+                <img src="../assets/jj.jpg" title="logo" alt="logo" className={'w-24 m-auto'}/>
 
                 <div className={'text-2xl font-bold text-green-600 text-center mt-5'}>
                     Customer Form
