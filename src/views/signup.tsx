@@ -4,45 +4,6 @@ import Input from "../components/input/input";
 
 
 function Signup():JSX.Element{
-    const [fname,setFname] =useState<string>("");
-    const [lname,setLname] =useState<string>("");
-    const [username,setUsername] =useState<string>("");
-    const [email,setEmail] =useState<string>("");
-    const [password,setPassword] =useState<string>("");
-
-    const handleInputs = (e: any, type: string) => {
-        switch (type) {
-            case 'fname':
-                setFname(e.target.value);
-                break;
-            case 'lname':
-                setLname(e.target.value);
-                break;
-            case 'username':
-                setUsername(e.target.value);
-                break;
-            case 'email':
-                setEmail(e.target.value);
-                break;
-            case 'password':
-                setPassword(e.target.value);
-                break;
-        }
-    }
-
-    //validate
-    const validateSubmition = () => {
-        // validation
-        if(fname && lname && username && email && password) {
-            // submitNewUser();
-        } else {
-            Swal.fire({
-                icon: "error",
-                title: "Invalid Inputs",
-                text: "Please enter valid inputs"
-            });
-        }
-    }
 
     return(
         <section className={'flex justify-center items-center p-5'}>
@@ -64,7 +25,7 @@ function Signup():JSX.Element{
                             label={'First Name'}
                             placeholder={'Enter your first name'}
                             optional={false}
-                            callBack={handleInputs}
+
                         />
 
                         <Input
@@ -73,7 +34,7 @@ function Signup():JSX.Element{
                             label={'Last Name'}
                             placeholder={'Enter your last name'}
                             optional={false}
-                            callBack={handleInputs}
+
                         />
 
                     </div>
@@ -84,7 +45,7 @@ function Signup():JSX.Element{
                         label={'Username'}
                         placeholder={'Enter your username'}
                         optional={false}
-                        callBack={handleInputs}
+
                     />
 
                     <Input
@@ -93,7 +54,7 @@ function Signup():JSX.Element{
                         label={'Email'}
                         placeholder={'Enter your email'}
                         optional={false}
-                        callBack={handleInputs}
+
                     />
 
                     <Input
@@ -102,12 +63,12 @@ function Signup():JSX.Element{
                         label={'Password'}
                         placeholder={'Enter your password'}
                         optional={false}
-                        callBack={handleInputs}
+
                     />
                 </div>
 
                 <div className={'text-center mt-5'}>
-                    <button className={'main-btn'} onClick={validateSubmition}>Sign Up</button>
+                    <button className={'main-btn'} onClick={"gg"}>Sign Up</button>
                 </div>
 
                 <div className={'text-center mt-5'}>
